@@ -1,0 +1,20 @@
+[
+  {
+    "slug": "hello-world",
+    "title": "你好，世界",
+    "date": "2025-11-04",
+    "tags": ["示例", "入门"],
+    "summary": "一篇示例文章，展示如何用 Markdown 撰写内容。",
+    "file": "./posts/hello-world.md"
+  },
+  {
+    "slug": "work-and-freedom",
+    "title": "上班后，我精神自由了。",
+    "date": "2025-11-04",
+    "tags": ["随笔"],
+    "summary": "跨学科后的实践驱动式成长，‘学以致用’带来自由感。",
+    "file": "./posts/work-and-freedom.md"
+  }
+]
+
+

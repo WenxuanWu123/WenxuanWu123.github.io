@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>我的文章</title>
+  <meta name="color-scheme" content="light dark">
+  <link rel="stylesheet" href="./styles.css" />
+  <!-- Markdown 渲染库 -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
+  <!-- DOMPurify 以防止 XSS -->
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.7/dist/purify.min.js" defer></script>
+  <script src="./script.js" type="module" defer></script>
+  <link rel="icon" href="data:,">
+  <meta name="description" content="我的文章集合" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="#/">我的文章</a>
+      <div class="actions">
+        <input id="searchInput" class="search" placeholder="搜索标题、标签…" aria-label="搜索" />
+        <button id="themeToggle" class="icon-btn" title="切换主题" aria-label="切换主题">🌓</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <div class="wrap">
+      <section id="listView" hidden>
+        <ul id="postList" class="post-list"></ul>
+        <div id="emptyState" class="empty" hidden>没有找到匹配的文章</div>
+      </section>
+
+      <article id="postView" class="post" hidden>
+        <a class="back" href="#/">← 返回列表</a>
+        <h1 id="postTitle"></h1>
+        <div id="postMeta" class="meta"></div>
+        <div id="postContent" class="content"></div>
+        <section id="giscusSection" class="comments" aria-label="Giscus 评论区">
+          <h2 class="comments-title">讨论</h2>
+          <div id="giscusContainer"></div>
+          <div id="giscusHint" class="empty" hidden>
+            尚未配置 Giscus。请在 README 按步骤填入仓库 ID 与分类 ID。
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">© <span id="year"></span> 我的文章</div>
+  </footer>
+</body>
+</html>
+
+
