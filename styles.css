@@ -1,30 +1,30 @@
-:root{--bg:#ffffff;--fg:#111827;--muted:#6b7280;--border:#e5e7eb;--brand:#2563eb;--card:#f8fafc;--code:#0f172a}
-@media (prefers-color-scheme: dark){:root{--bg:#0b0f1a;--fg:#e5e7eb;--muted:#9ca3af;--border:#1f2937;--brand:#60a5fa;--card:#0f172a;--code:#e5e7eb}}
+:root{--bg:#ffffff;--fg:#111827;--muted:#6b7280;--border:#e5e7eb;--brand:#2563eb;--card:#f8fafc;--code:#0f172a;--blue:#3b82f6;--light-blue:#bfdbfe;--green:#10b981;--light-green:#d1fae5;--accent:#8b5cf6}
+@media (prefers-color-scheme: dark){:root{--bg:#0b0f1a;--fg:#e5e7eb;--muted:#9ca3af;--border:#1f2937;--brand:#60a5fa;--card:#0f172a;--code:#e5e7eb;--blue:#60a5fa;--light-blue:#1e3a8a;--green:#34d399;--light-green:#065f46;--accent:#a78bfa}
 *{box-sizing:border-box}html,body{padding:0;margin:0}
 body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;line-height:1.65;background:var(--bg);color:var(--fg)}
 .wrap{max-width:900px;margin:0 auto;padding:0 16px}
-.site-header{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--border);z-index:10}
+.site-header{position:sticky;top:0;background:var(--bg);border-bottom:2px solid var(--blue);z-index:10}
 .site-header .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
 .brand{color:var(--fg);text-decoration:none;font-weight:700}
 .actions{display:flex;gap:8px;align-items:center}
 .search{height:34px;padding:0 10px;border:1px solid var(--border);border-radius:8px;background:var(--card);color:var(--fg);min-width:220px}
-.icon-btn{height:34px;padding:0 10px;border:1px solid var(--border);border-radius:8px;background:var(--card);color:var(--fg);cursor:pointer}
+.icon-btn{height:34px;padding:0 10px;border:1px solid var(--blue);border-radius:8px;background:var(--light-blue);color:var(--fg);cursor:pointer;transition:all 0.3s ease}.icon-btn:hover{background:var(--blue);color:var(--bg)}
 .site-main{padding:24px 0}
 .post-list{list-style:none;padding:0;margin:0;display:grid;gap:12px}
-.post-list li{padding:14px;border:1px solid var(--border);border-radius:12px;background:var(--card)}
-.post-list a{color:var(--brand);text-decoration:none}
+.post-list li{padding:14px;border:1px solid var(--border);border-radius:12px;background:var(--card);transition:all 0.3s ease;box-shadow:0 2px 4px rgba(0,0,0,0.05)}.post-list li:hover{border-color:var(--blue);box-shadow:0 4px 8px rgba(0,0,0,0.1);transform:translateY(-1px)}
+.post-list a{color:var(--blue);text-decoration:none;font-weight:500}
 .post-list .meta{color:var(--muted);font-size:14px;margin-top:4px}
-.tag{display:inline-block;padding:2px 8px;border:1px solid var(--border);border-radius:999px;font-size:12px;color:var(--muted);margin-right:6px}
+.tag{display:inline-block;padding:2px 8px;border:1px solid var(--green);background-color:var(--light-green);border-radius:999px;font-size:12px;color:var(--fg);margin-right:6px;font-weight:500}
 .empty{color:var(--muted);text-align:center;padding:24px}
-.post .back{display:inline-block;margin-bottom:12px;text-decoration:none;color:var(--brand)}
+.post .back{display:inline-block;margin-bottom:12px;text-decoration:none;color:var(--blue);background-color:var(--light-blue);padding:6px 12px;border-radius:6px;transition:all 0.3s ease}.post .back:hover{background-color:var(--blue);color:var(--bg)}
 .post h1{margin:0 0 8px 0;font-size:28px}
 .post .meta{color:var(--muted);font-size:14px;margin-bottom:16px}
 .post .content{border-top:1px solid var(--border);padding-top:16px}
 .post .content img{max-width:100%;border-radius:8px}
 .post .content pre{background:#0b1220;color:var(--code);padding:12px;border-radius:8px;overflow:auto}
 .post .content code{background:rgba(125,125,125,.12);padding:2px 6px;border-radius:6px}
-.site-footer{border-top:1px solid var(--border);padding:16px 0;color:var(--muted)}
-.theme-dark{--bg:#0b0f1a;--fg:#e5e7eb;--muted:#9ca3af;--border:#1f2937;--brand:#60a5fa;--card:#0f172a;--code:#e5e7eb}
+.site-footer{border-top:2px solid var(--green);padding:16px 0;color:var(--fg);background-color:var(--light-green)}
+.theme-dark{--bg:#0b0f1a;--fg:#e5e7eb;--muted:#9ca3af;--border:#1f2937;--brand:#60a5fa;--card:#0f172a;--code:#e5e7eb;--blue:#60a5fa;--light-blue:#1e3a8a;--green:#34d399;--light-green:#065f46;--accent:#a78bfa}
 @media (max-width:600px){.search{min-width:0;width:50vw}}
 
 
