@@ -1,9 +1,24 @@
 [
   {
+    "slug": "ai-seismic-monitoring-guide",
+    "title": "基于人工智能的全球台网实时大震测系统建设指南",
+    "date": "2026-01-21",
+    "tags": [
+      "地震监测",
+      "人工智能",
+      "深度学习",
+      "技术指南"
+    ],
+    "summary": "面向地震监测工作人员的详细技术指南：如何搭建全球台网并建立基于AI的实时大震测系统，实现近震30秒内Pg/Sg波自动识别。",
+    "file": "./posts/ai-seismic-monitoring-guide.md"
+  },
+  {
     "slug": "work-and-freedom",
     "title": "上班后，我精神自由了。",
     "date": "2025-11-04",
-    "tags": ["随笔"],
+    "tags": [
+      "随笔"
+    ],
     "summary": "跨学科后的实践驱动式成长，‘学以致用’带来自由感。",
     "file": "./posts/work-and-freedom.md"
   }
